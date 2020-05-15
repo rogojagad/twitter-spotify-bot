@@ -1,6 +1,6 @@
 # Twitter Spotify Bot
 
-A bot that will tweet about my current played song on Spotify along with the artists', album's and playlist's information when triggered. I create a Telegram Bot that act as the client to trigger this bot to hit the Spotify API to get the track data and then make a tweet about the song using Twitter API.
+A bot that will tweet about my current played song on Spotify along with the artists', album's and playlist's information when triggered. I create a [Telegram Bot](https://github.com/rogojagad/telegram-spotify-bot) that act as the client to trigger this bot to hit the Spotify API to get the track data and then make a tweet about the song using Twitter API.
 
 
 
