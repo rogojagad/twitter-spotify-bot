@@ -8,6 +8,7 @@ const axios = require("axios");
 const bodyParser = require("body-parser");
 const querystring = require("querystring");
 
+const authUtils = require("./auth/utils");
 const requester = require("./requester");
 const updater = require("./updater");
 
@@ -41,16 +42,14 @@ app.get("/callback", async (req, res) => {
     body.append("code", code);
     body.append("redirect_uri", redirectUrl);
 
-    const authString = Buffer.from(
-        `${process.env.CLIENT_ID}:${process.env.CLIENT_SECRET}`
-    ).toString("base64");
-
     const config = {
         headers: {
-            Authorization: `Basic ${authString}`,
+            Authorization: authUtils.generateBasicAuthHeaderContent(),
             "Content-Type": "application/x-www-form-urlencoded",
         },
     };
+
+    console.log(config);
 
     try {
         const result = await axios.post(
