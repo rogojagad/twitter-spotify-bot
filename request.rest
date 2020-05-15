@@ -1,0 +1,13 @@
+GET https://api.spotify.com/v1/me/player/currently-playing
+Authorization: Bearer BQB1aOG3YHwokPAd2XDGVLYsewB6govftbJrCp2vjnLVPIGZgyJjobWxdMF4WDnWcDnFUVgT6ReykDxGmC7rTGfN_Usneh-gSH4rL1AfJym7Xij5dW9v2s0QKJPFvLEe4vAfJccj4d6ek50TTVj3L9cTJ5Ogz96GcmBINFIFDheX2A
+
+###
+GET https://api.spotify.com/v1/albums/5FnNO3IO6veN62ZdaV7j3z
+Authorization: Bearer BQD5sKsaWMujVq9vkGHQHrUuh08kw-uzn3W_NMxopzWlx4uj8X_MrlK-7qJ53fGGlOtG0lOYdM24wDZ-ZZE1wjxY4y5sNZhdGB1DQsZdDAslayAblMytUsByVvIPLQ_TVyc6KEGqjkwME5WA0RVUXXy5fWTlIaobPcupc7VT
+
+###
+GET https://api.spotify.com/v1/tracks/5MFn0JmM3fblve1lYutAxZ
+Authorization: Bearer BQD5sKsaWMujVq9vkGHQHrUuh08kw-uzn3W_NMxopzWlx4uj8X_MrlK-7qJ53fGGlOtG0lOYdM24wDZ-ZZE1wjxY4y5sNZhdGB1DQsZdDAslayAblMytUsByVvIPLQ_TVyc6KEGqjkwME5WA0RVUXXy5fWTlIaobPcupc7VT
+
+###
+GET http://localhost:5000/login
