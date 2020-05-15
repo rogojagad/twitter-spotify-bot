@@ -86,7 +86,7 @@ app.get("/played_song", async (_, res) => {
     const result = await requester.getPlayedSong();
 
     if (result.isPlaying) {
-        await updater.tweet(result);
+//        await updater.tweet(result);
     }
 
     return res.status(200).json(result);

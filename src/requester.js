@@ -20,7 +20,7 @@ exports.getPlayedSong = async () => {
     );
 
     if (result.status === 200) {
-        return trackUtils.buildResultData(result);
+        return trackUtils.buildResultData(result, config);
     }
 };
 

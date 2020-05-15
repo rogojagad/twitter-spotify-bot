@@ -5,7 +5,7 @@ exports.getPlaylistName = async (endpoint, header) => {
     return result.data.name;
 };
 
-exports.buildResultData = async (result) => {
+exports.buildResultData = async (result, config) => {
     const data = result.data;
     let playlistUrl = undefined;
     let playlistHref = undefined;
