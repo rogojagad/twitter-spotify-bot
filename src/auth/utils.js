@@ -9,7 +9,7 @@ exports.refreshAccessToken = async () => {
 
     const header = {
         headers: {
-            Authorization: authUtils.generateBasicAuthHeaderContent(),
+            Authorization: this.generateBasicAuthHeaderContent(),
         },
     };
 
