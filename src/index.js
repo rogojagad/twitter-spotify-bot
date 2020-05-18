@@ -85,11 +85,16 @@ app.get("/played_song", async (_, res) => {
 
     const result = await requester.getPlayedSong();
 
-    if (result.isPlaying) {
-        await updater.tweet(result);
+    try {
+        if (result.isPlaying) {
+            await updater.tweet(result);
+            return res.status(200).json(result);
+        } else {
+            return res.status(201).json(result);
+        }
+    } catch (error) {
+        console.log(error);
     }
-
-    return res.status(200).json(result);
 });
 
 console.log(`Listening on ${port}`);
