@@ -46,3 +46,9 @@ exports.buildResultData = async (result, config) => {
         title: name,
     };
 };
+
+exports.buildNoResult = () => {
+    return {
+        isPlaying: false,
+    };
+};
