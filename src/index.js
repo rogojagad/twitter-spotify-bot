@@ -21,7 +21,7 @@ app.disable("etag");
 
 const redirectUrl = `${process.env.APP_HOST}/callback`;
 
-app.get("/test", (req,res) => {
+app.post("/test", (req,res) => {
     console.log(req.body);
 });
 
