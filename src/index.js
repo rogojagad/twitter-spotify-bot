@@ -21,10 +21,6 @@ app.disable("etag");
 
 const redirectUrl = `${process.env.APP_HOST}/callback`;
 
-app.post("/test", (req,res) => {
-    console.log(req.body);
-});
-
 app.get("/login", (_, res) => {
     const scope = "user-read-currently-playing user-read-playback-state";
 
